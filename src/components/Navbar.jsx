@@ -7,16 +7,16 @@ import logoImg from '../assets/logo.png'
 import './Navbar.css'
 
 const tabs = [
-  { label: 'ホーム',   emoji: '🏠', href: '#hero'    },
-  { label: 'About',   emoji: '🐉', href: '#about'   },
-  { label: 'Ref',     emoji: '🖼️', href: '#charsheet'},
-  { label: 'Support', emoji: '⛩️', href: '#support' },
+  { label: 'Home', emoji: '🏠', href: '#hero' },
+  { label: 'About', emoji: '🐰', href: '#about' },
+  { label: 'Ref', emoji: '🖼️', href: '#charsheet' },
+  { label: 'Support', emoji: '🎁', href: '#support' },
 ]
 
 export default function Navbar() {
-  const [scrolled, setScrolled]       = useState(false)
-  const [activeTab, setActiveTab]     = useState(0)
-  const { stats, loading }            = useYouTubeData()
+  const [scrolled, setScrolled] = useState(false)
+  const [activeTab, setActiveTab] = useState(0)
+  const { stats, loading } = useYouTubeData()
 
   const subCount = !loading && stats?.subscriberCount
     ? formatSubscriberCount(stats.subscriberCount)
@@ -51,7 +51,7 @@ export default function Navbar() {
         >
           <img
             src={logoImg}
-            alt="Ryuta Amagiri"
+            alt="Liuna Austella"
             className="top-bar__logo-img"
             draggable={false}
           />
@@ -72,7 +72,7 @@ export default function Navbar() {
             <span>Join</span>
           </div>
           <a
-            href="https://www.youtube.com/@ryutaamagiri?sub_confirmation=1"
+            href="https://www.youtube.com/@Liuna_Austella?sub_confirmation=1"
             target="_blank"
             rel="noopener noreferrer"
             className="top-bar__menu-btn"
@@ -106,7 +106,7 @@ export default function Navbar() {
 
         {/* Subscribe CTA slot */}
         <a
-          href="https://www.youtube.com/@ryutaamagiri?sub_confirmation=1"
+          href="https://www.youtube.com/@Liuna_Austella?sub_confirmation=1"
           target="_blank"
           rel="noopener noreferrer"
           className="bottom-tab-bar__subscribe"

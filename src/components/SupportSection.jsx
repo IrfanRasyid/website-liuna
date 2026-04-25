@@ -7,25 +7,41 @@ const supportLinks = [
     id: 'trakteer',
     name: 'Trakteer',
     desc: 'Support with a virtual cup of coffee ☕',
-    href: 'https://trakteer.id/ryutaamagiri/tip',
+    href: 'https://trakteer.id/liuna_austella/gift',
     emoji: '🎁',
     color: '#e85d04',
   },
   {
-    id: 'tiptap',
-    name: 'TipTap',
-    desc: 'Quick and easy direct tips 💸',
-    href: 'https://tiptap.gg/ryutaamagiri',
-    emoji: '💰',
-    color: '#00b4d8',
+    id: 'buylink',
+    name: 'Buylink',
+    desc: 'Support & get exclusive merch 🛒',
+    href: 'https://idol.buylink.id/LiunaAustella',
+    emoji: '🛒',
+    color: '#2ecc71',
   },
   {
     id: 'tako',
     name: 'Tako.id',
     desc: 'Support the daily stream grind 🐙',
-    href: 'https://tako.id/RyutaAmagiri',
+    href: 'https://tako.id/LiunaBwaBwa',
     emoji: '🐙',
     color: '#9d4edd',
+  },
+  {
+    id: 'tiptap',
+    name: 'TipTap',
+    desc: 'Quick and easy direct tips 💸',
+    href: 'https://tiptap.gg/liuna_austella',
+    emoji: '💰',
+    color: '#00b4d8',
+  },
+  {
+    id: 'sociabuzz',
+    name: 'Sociabuzz',
+    desc: 'Join the tribe and support! ⚡',
+    href: 'https://sociabuzz.com/liunaaustella/tribe',
+    emoji: '⚡',
+    color: '#f1c40f',
   },
 ]
 
@@ -42,10 +58,10 @@ export default function SupportSection() {
         <div className="support__header">
           <h2 className="support__title">
             <span className="support__title-line support__title-line--1">SUPPORT</span>
-            <span className="support__title-line support__title-line--2">RYUTA</span>
+            <span className="support__title-line support__title-line--2">LIUNA</span>
           </h2>
           <div className="support__subtitle-box">
-            Every bit of support helps the stream grow! Thank you Onigiris! ⛩️
+            Every bit of support helps the stream grow! Thank you Lovaliu! 🐰⚡
           </div>
         </div>
 
@@ -95,7 +111,7 @@ export default function SupportSection() {
           <div className="support__quote-text">
             "Your presence in the stream is the best support I could ask for. Let's make more memories together!"
           </div>
-          <div className="support__quote-author">— Ryuta Amagiri</div>
+          <div className="support__quote-author">— Liuna Austella</div>
         </motion.div>
       </div>
     </section>

@@ -1,58 +1,58 @@
 /* ============================================
-   RYUTA AMAGIRI — GLOBAL CSS
-   Anime Idol Game Theme
+   LIUNA AUSTELLA — GLOBAL CSS
+   Chaotic Bunny Theme
    ============================================ */
 
 /* --- DESIGN TOKENS --- */
 :root {
-  /* Color Palette — Idol Game Blue */
-  --color-bg:            #f4f9ff;
-  --color-bg-deep:       #e0f0fa;
-  --color-bg-mid:        #eef7fd;
-  --color-bg-lighter:    #f8fbff;
+  /* Color Palette — Chaotic Bunny Pastel */
+  --color-bg:            #EAF4FF;
+  --color-bg-deep:       #D9EDFF;
+  --color-bg-mid:        #E2F0FF;
+  --color-bg-lighter:    #F2F8FF;
   --color-bg-surface:    #ffffff;
 
   /* Panel / Card Colors */
   --color-panel:         rgba(255, 255, 255, 0.92);
-  --color-panel-border:  rgba(90, 170, 230, 0.35);
-  --color-panel-shadow:  0 4px 20px rgba(30, 100, 180, 0.12);
+  --color-panel-border:  rgba(255, 178, 206, 0.5);
+  --color-panel-shadow:  0 4px 20px rgba(255, 178, 206, 0.25);
   --color-panel-hover:   rgba(255, 255, 255, 0.98);
 
   /* Accent Colors */
-  --color-pink:          #FF6B9D;
-  --color-pink-light:    #FFB3CC;
-  --color-pink-deep:     #E8407A;
-  --color-cyan:          #4FC3F7;
-  --color-cyan-deep:     #0288D1;
-  --color-cyan-light:    #B3E5FC;
-  --color-gold:          #FFD54F;
-  --color-gold-deep:     #F9A825;
-  --color-purple:        #CE93D8;
-  --color-purple-deep:   #9C27B0;
+  --color-pink:          #FF82A9;
+  --color-pink-light:    #FFB2CE;
+  --color-pink-deep:     #F05C8A;
+  --color-cyan:          #7EE0FF;
+  --color-cyan-deep:     #34BBE5;
+  --color-cyan-light:    #B2EFFF;
+  --color-gold:          #FFAE00;
+  --color-gold-deep:     #E69B00;
+  --color-purple:        #D7A8F0;
+  --color-purple-deep:   #A86BCB;
   --color-green:         #80CBC4;
   --color-orange:        #FFAB91;
 
   /* Text Colors */
-  --color-text-dark:     #1A3A5C;
-  --color-text-mid:      #2E6B9E;
-  --color-text-soft:     #5A8CB5;
-  --color-text-muted:    #88AECB;
+  --color-text-dark:     #4A2E63;
+  --color-text-mid:      #6A4E85;
+  --color-text-soft:     #8C74A6;
+  --color-text-muted:    #B4A2C6;
   --color-text-on-pink:  #fff;
   --color-text-on-cyan:  #fff;
 
   /* Gradients */
-  --gradient-bg:         linear-gradient(165deg, #f0f7ff 0%, #e8f4ff 30%, #f8faff 60%, #fafcff 100%);
-  --gradient-pink:       linear-gradient(135deg, #FF6B9D, #FF8DB5);
-  --gradient-cyan:       linear-gradient(135deg, #4FC3F7, #29B6F6);
-  --gradient-gold:       linear-gradient(135deg, #FFD54F, #FFCA28);
-  --gradient-hero-title: linear-gradient(135deg, #FF6B9D 0%, #FF9AC1 40%, #4FC3F7 100%);
-  --gradient-shimmer:    linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+  --gradient-bg:         linear-gradient(135deg, #D4F1F9 0%, #FFD6E5 50%, #E6D0F5 100%);
+  --gradient-pink:       linear-gradient(135deg, #FF82A9, #FFB2CE);
+  --gradient-cyan:       linear-gradient(135deg, #7EE0FF, #34BBE5);
+  --gradient-gold:       linear-gradient(135deg, #FFB732, #FFAE00);
+  --gradient-hero-title: linear-gradient(135deg, #FF82A9 0%, #D7A8F0 50%, #7EE0FF 100%);
+  --gradient-shimmer:    linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
 
   /* Glass Panel / Flat Card */
   --glass-bg:            #ffffff;
-  --glass-border:        rgba(79, 195, 247, 0.4);
-  --glass-border-hover:  rgba(255, 107, 157, 0.8);
-  --glass-shadow:        4px 4px 0px rgba(79, 195, 247, 0.15);
+  --glass-border:        rgba(255, 178, 206, 0.6);
+  --glass-border-hover:  rgba(126, 224, 255, 0.8);
+  --glass-shadow:        4px 4px 0px rgba(255, 178, 206, 0.3);
   --glass-glow:          none;
 
   /* Typography */
@@ -108,26 +108,30 @@ main {
   padding-top: 60px;
 }
 
-/* Grid paper pattern overlay */
+/* Diagonal stripes pattern overlay */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(100, 170, 230, 0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(100, 170, 230, 0.18) 1px, transparent 1px);
-  background-size: 36px 36px;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.35) 24px,
+    transparent 24px,
+    transparent 48px
+  );
   pointer-events: none;
   z-index: 0;
 }
 
-/* Dot accent on grid intersections */
+/* Subtle dot overlay for texture */
 body::after {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: radial-gradient(circle, rgba(100, 170, 230, 0.25) 1px, transparent 1px);
-  background-size: 36px 36px;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.6) 2px, transparent 2px);
+  background-size: 48px 48px;
+  background-position: 0 0, 24px 24px;
   pointer-events: none;
   z-index: 0;
 }

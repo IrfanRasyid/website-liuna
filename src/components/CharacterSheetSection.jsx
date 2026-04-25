@@ -6,8 +6,8 @@ export default function CharacterSheetSection() {
   return (
     <section id="charsheet" className="charsheet section">
       {/* Background Watermark Text */}
-      <div className="watermark-text charsheet__watermark-1">RYUTA</div>
-      <div className="watermark-text charsheet__watermark-2">AMAGIRI</div>
+      <div className="watermark-text charsheet__watermark-1">LIUNA</div>
+      <div className="watermark-text charsheet__watermark-2">AUSTELLA</div>
 
       {/* Decorative Accent Squares */}
       <div className="charsheet__sq charsheet__sq--1" />
@@ -53,7 +53,7 @@ export default function CharacterSheetSection() {
 
           <img
             src={charSheetImg}
-            alt="Ryuta Amagiri Character Sheet"
+            alt="Liuna Austella Character Sheet"
             className="charsheet__img"
             loading="lazy"
           />

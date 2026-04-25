@@ -50,8 +50,8 @@ export default function HeroSection() {
         aria-hidden="true"
         style={{ y: isDesktop ? bgTextY : 0 }}
       >
-        <span className="hero__bg-word hero__bg-word--1">RYUTA</span>
-        <span className="hero__bg-word hero__bg-word--2">AMAGIRI</span>
+        <span className="hero__bg-word hero__bg-word--1">LIUNA</span>
+        <span className="hero__bg-word hero__bg-word--2">AUSTELLA</span>
       </motion.div>
 
       {/* ── DECORATIVE UI SQUARES ── */}
@@ -77,7 +77,7 @@ export default function HeroSection() {
       >
         <img
           src={charImg}
-          alt="Ryuta Amagiri"
+          alt="Liuna Austella"
           className="hero__char-img"
           draggable={false}
         />
@@ -93,7 +93,7 @@ export default function HeroSection() {
         transition={{ delay: 0.3, duration: 0.6 }}
         style={isDesktop ? { opacity: uiOpacity, y: uiY } : {}}
       >
-        <img src={logoImg} alt="Ryuta Amagiri" className="hero__logo-small" draggable={false} />
+        <img src={logoImg} alt="Liuna Austella" className="hero__logo-small" draggable={false} />
         <div className="hero__panel-line" />
         <div className="hero__channel-label">
           <span className="hero__channel-tag">INDIE VTUBER ID</span>
@@ -135,17 +135,16 @@ export default function HeroSection() {
         style={isDesktop ? { opacity: uiOpacity, y: uiY } : {}}
       >
         <div className="hero__name-stamp">
-          <div className="hero__name-stamp-title">RYUTA AMAGIRI</div>
-          <div className="hero__name-stamp-sub">雪山鬼龍</div>
+          <div className="hero__name-stamp-title">LIUNA AUSTELLA</div>
+          <div className="hero__name-stamp-sub">Chaotic Bunny 🐰⚡</div>
         </div>
         <div className="hero__panel-line" />
         <p className="hero__bio-text">
-          An indie male VTuber from Indonesia. Snow mountain onidragon who loves gaming
-          and singing ❄️🐉
+          An indie VTuber from Indonesia. Your Chaotic Bunny is back, ready to shake up your heart with brand-new charm! 🐰⚡
         </p>
         <div className="hero__social-row">
           <a
-            href="https://www.youtube.com/@ryutaamagiri?sub_confirmation=1"
+            href="https://www.youtube.com/@Liuna_Austella?sub_confirmation=1"
             target="_blank" rel="noopener noreferrer"
             className="hero__social-btn hero__social-btn--yt"
             id="hero-subscribe-btn"
@@ -173,12 +172,12 @@ export default function HeroSection() {
         transition={{ delay: 0.6, duration: 0.6 }}
         style={isDesktop ? { opacity: uiOpacity, y: uiY } : {}}
       >
-        <div className="hero__br-tag">SNOW MTN. ONIDRAGON</div>
+        <div className="hero__br-tag">CHAOTIC BUNNY</div>
         <p className="hero__br-quote">
-          &ldquo;Ur snow mountain onidragon is here! Onigiri let&apos;s go!&rdquo;
+          &ldquo;Ur chaotic bunny is here! Lovaliu let&apos;s go!&rdquo;
         </p>
         <a
-          href="https://www.youtube.com/@ryutaamagiri"
+          href="https://www.youtube.com/@Liuna_Austella"
           target="_blank" rel="noopener noreferrer"
           className="hero__br-link"
           id="hero-channel-btn"

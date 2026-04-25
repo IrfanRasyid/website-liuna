@@ -4,11 +4,11 @@ import logoImg from '../assets/logo.png'
 import './Footer.css'
 
 const footerSocials = [
-  { icon: SiYoutube, href: 'https://www.youtube.com/@ryutaamagiri', label: 'YouTube' },
-  { icon: SiX, href: 'https://twitter.com/ryutaamagiri', label: 'Twitter' },
-  { icon: SiInstagram, href: 'https://www.instagram.com/ryutaamagirii', label: 'Instagram' },
+  { icon: SiYoutube, href: 'https://www.youtube.com/@Liuna_Austella', label: 'YouTube' },
+  { icon: SiX, href: 'https://twitter.com/Liuna_Austella', label: 'Twitter' },
+  { icon: SiInstagram, href: 'https://www.instagram.com/Liuna_Austella', label: 'Instagram' },
   { icon: SiDiscord, href: 'https://discord.gg/EBut2ReqTa', label: 'Discord' },
-  { icon: SiTiktok, href: 'https://www.tiktok.com/@ryutaamagiri', label: 'TikTok' },
+  { icon: SiTiktok, href: 'https://www.tiktok.com/@Liuna_Austella', label: 'TikTok' },
 ]
 
 const footerLinks = [
@@ -32,8 +32,8 @@ export default function Footer() {
 
         {/* Left: Brand */}
         <div className="footer__brand">
-          <img src={logoImg} alt="Ryuta Amagiri" className="footer__logo-img" draggable={false} />
-          <p className="footer__tagline">Ur snow mountain onidragon is here! 🏔️❄️</p>
+          <img src={logoImg} alt="Liuna Austella" className="footer__logo-img" draggable={false} />
+          <p className="footer__tagline">Your Chaotic Bunny is here! 🐰⚡</p>
           <div className="footer__socials">
             {footerSocials.map(({ icon: Icon, href, label }) => (
               <a
@@ -68,14 +68,20 @@ export default function Footer() {
           <div className="footer__support-group">
             <div className="footer__nav-title">Support</div>
             <div className="footer__support-links">
-              <a href="https://trakteer.id/ryutaamagiri/tip" target="_blank" rel="noopener noreferrer" className="footer__support-link">
+              <a href="https://trakteer.id/liuna_austella/gift" target="_blank" rel="noopener noreferrer" className="footer__support-link">
                 Trakteer
               </a>
-              <a href="https://tiptap.gg/ryutaamagiri" target="_blank" rel="noopener noreferrer" className="footer__support-link">
+              <a href="https://idol.buylink.id/LiunaAustella" target="_blank" rel="noopener noreferrer" className="footer__support-link">
+                Buylink
+              </a>
+              <a href="https://tako.id/LiunaBwaBwa" target="_blank" rel="noopener noreferrer" className="footer__support-link">
+                Tako
+              </a>
+              <a href="https://tiptap.gg/liuna_austella" target="_blank" rel="noopener noreferrer" className="footer__support-link">
                 TipTap
               </a>
-              <a href="https://tako.id/RyutaAmagiri" target="_blank" rel="noopener noreferrer" className="footer__support-link">
-                Tako
+              <a href="https://sociabuzz.com/liunaaustella/tribe" target="_blank" rel="noopener noreferrer" className="footer__support-link">
+                Sociabuzz
               </a>
             </div>
           </div>
@@ -85,16 +91,16 @@ export default function Footer() {
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
           <p className="footer__copy">
-            © {year} Ryuta Amagiri. All rights reserved.
+            © {year} Liuna Austella. All rights reserved.
           </p>
           <p className="footer__disclaimer">
-            This is a personal website for Ryuta Amagiri.
+            This is a personal website for Liuna Austella.
           </p>
         </div>
       </div>
 
       {/* Huge Background Decor */}
-      <div className="footer__bg-decor">AMAGIRI</div>
+      <div className="footer__bg-decor">AUSTELLA</div>
     </footer>
   )
 }
