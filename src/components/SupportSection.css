@@ -1,0 +1,220 @@
+.support {
+  padding: 120px 0;
+  position: relative;
+  background: transparent;
+  overflow: hidden;
+}
+
+/* Watermark */
+.support__watermark {
+  bottom: 10%;
+  left: -5%;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 107, 157, 0.08);
+  transform: rotate(-5deg);
+}
+
+/* Header */
+.support__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.support__title {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.9;
+  margin-bottom: 20px;
+}
+
+.support__title-line {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(2.2rem, 10vw, 5.5rem);
+}
+
+.support__title-line--1 {
+  color: var(--color-cyan);
+  text-shadow: 3px 3px 0 rgba(79, 195, 247, 0.2);
+  margin-left: -5vw;
+}
+
+.support__title-line--2 {
+  color: var(--color-pink);
+  margin-left: 10vw;
+  text-shadow: 3px 3px 0 rgba(255, 107, 157, 0.2);
+}
+
+.support__subtitle-box {
+  background: var(--color-gold);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  border-radius: 2px;
+  box-shadow: 4px 4px 0 rgba(255, 213, 79, 0.3);
+  display: inline-block;
+}
+
+/* Grid */
+.support__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Card */
+.support-card {
+  position: relative;
+  display: block;
+  background: #fff;
+  border: 2px solid rgba(100, 180, 240, 0.2);
+  padding: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+}
+
+.support-card:hover {
+  transform: translateX(10px) translateY(-4px);
+  box-shadow: -6px 6px 0 rgba(79, 195, 247, 0.15);
+  border-color: rgba(79, 195, 247, 0.5);
+}
+
+.support-card__inner {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  gap: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.support-card__icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  flex-shrink: 0;
+  color: #fff;
+  box-shadow: inset 0 -4px 0 rgba(0,0,0,0.1);
+  transform: rotate(-5deg);
+}
+
+.support-card:hover .support-card__icon-box {
+  transform: rotate(0deg) scale(1.1);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.support-card__content {
+  flex: 1;
+}
+
+.support-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.support-card__desc {
+  color: var(--color-text-mid);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.support-card__action {
+  opacity: 0.5;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.support-card:hover .support-card__action {
+  opacity: 1;
+  transform: translateX(4px) scale(1.2);
+}
+
+.support-card__accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 6px;
+  opacity: 0.8;
+}
+
+/* Quote Panel */
+.support__quote-panel {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--color-pink);
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 8px 8px 0 rgba(255, 107, 157, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+.support__quote-panel::before {
+  content: '⛩️';
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  font-size: 2rem;
+  transform: rotate(-15deg);
+}
+
+.support__quote-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.support__quote-author {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .support { padding: 80px 0; }
+  .support__title-line--1 { margin-left: 0; }
+  .support__title-line--2 { margin-left: 20px; }
+  .support-card__inner {
+    padding: 20px 16px;
+    gap: 16px;
+  }
+  .support-card__icon-box {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  .support-card__title { font-size: 1.2rem; }
+  .support-card__desc { font-size: 0.85rem; }
+  .support__quote-panel { padding: 30px 20px; }
+  .support__quote-panel::before {
+    left: 20px;
+    top: -15px;
+  }
+  .support__quote-text { font-size: 1.05rem; }
+}
