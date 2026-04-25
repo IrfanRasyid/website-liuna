@@ -14,8 +14,6 @@ const footerSocials = [
 const footerLinks = [
   { label: 'About', href: '#about' },
   { label: 'Ref Sheet', href: '#charsheet' },
-  { label: 'Videos', href: '#videos' },
-  { label: 'Fan Art', href: '#fanart' },
   { label: 'Support', href: '#support' },
 ]
 
