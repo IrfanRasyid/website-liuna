@@ -195,7 +195,7 @@ export default function HeroSection() {
         style={isDesktop ? { opacity: uiOpacity, y: uiY } : {}}
       >
         <div className="hero__center-line" />
-        <span className="hero__center-label">DEBUT · 12.03.2022</span>
+        <span className="hero__center-label">DEBUT · 20.04.2022</span>
         <div className="hero__center-line" />
       </motion.div>
 
